@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+
+.ci{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border: 2px solid white;
+    padding: 15px 30px;
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    border-radius: 30px;
+    top: 70%;
+    right: 50%;
+    transform: translate(50%, 70%);
+}
+
+.ci:first-child:hover{   
+    background: linear-gradient(45deg,#03a9f4 ,blue,deeppink,blue
+    red,blue,deeppink,blue);
+    background-size: 400%;
+}
+
+.ci:last-child:hover{   
+    background: linear-gradient(45deg,#03a9f4 ,blue,deeppink,blue
+    red,blue,deeppink,blue);
+    background-size: 400%;
+}
