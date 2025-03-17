@@ -1,0 +1,334 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    overflow: hidden;
+}
+
+h1{
+    position: absolute;
+    color: white;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    text-align: center;
+    z-index: 1;
+}
+
+h1 i{
+    color: #2577AA;
+}
+
+h1 b{
+    color: #DF841E;
+}
+
+.boton_posicion{
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -65%);
+}
+
+button{
+    position: relative;
+    height: 60px;
+    width: 200px;
+    margin: 0 35px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    background: black;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 100;
+    transition: 6s;
+
+} 
+
+button:first-child:hover{
+    background: linear-gradient(60deg,
+    #cfb315,#aece2f,#EA5656,#117C8A,
+    #cfb315);
+    background-size: 400%;
+    z-index: 100;
+}
+
+button:first-child:before{
+    content: "";
+    position: absolute;
+    background: inherit;
+    top: -5px;
+    right: -5px;
+    left: -5px;
+    bottom: -5px;
+    border-radius: 50px;
+    filter: blur(20px); 
+    opacity: 0 ;
+    transition: opacity 0.1s;
+}
+
+button:first-child:hover:before{
+    opacity: 1;
+    z-index: -1;
+}
+
+button:hover{
+    z-index: 1;
+    animation: glow 8s linear infinite;
+}
+
+@keyframes glow{
+    0%{
+        background-position: 0%;
+    }
+
+    100%{
+        background-position: 400%;
+    }
+}
+
+button h1{
+    font-size: 30px;
+}
+
+
+/* NO PLVIDES ESTOS LINKS PARA SACAR IDEAS
+    (la sugerencia es intentar memorizar las funciones de los codigos, no que los copies al pie de la letra
+    https://www.youtube.com/watch?v=mqF7sNdTtnY
+    https://www.youtube.com/watch?v=UeQyNsX-23E
+    https://www.youtube.com/watch?v=WMJ0_7HXfOQ&t=220s
+*/
+
+.circulo{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    z-index: -1;
+    border-radius: 50%;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -65%);  
+    transition-delay: ease-in-out;
+    transition: 1.5s;
+}
+
+.texto{
+    position: absolute;
+    color: transparent;
+    text-align: end;
+    width: 300px;
+}
+
+.boton_hover:hover .texto{
+    top: 300%;
+    left: 200%;
+    transition: 4s;
+    color: white;
+}
+
+.boton_hover:hover .circulo.uno{
+    position: absolute;
+    top: -550%;
+    left: -60%;
+    width: 600px;
+    height: 600px;
+    background-color: green;
+    transition: 1.5s;
+    box-shadow: 1px 1px 30px 30px green;
+    z-index: -3;
+    user-select: none;
+}
+
+.boton_hover:hover .circulo.dos{
+    position: absolute;
+    top: -250%;
+    left: -250%;
+    width: 600px;
+    height: 600px;
+    background-color: yellow;
+    transition: 2s;
+    box-shadow: 1px 1px 30px 30px yellow;
+}
+
+.boton_hover:hover .circulo.tres{
+    position: absolute;
+    top: -250%;
+    left: 350%;
+    width: 600px;
+    height: 600px;
+    background-color: red;
+    transition: 3s;
+    box-shadow: 1px 1px 30px 30px red;
+}
+
+.boton_hover:hover .circulo.cuatro{
+    position: absolute;
+    top: -550%;
+    left: 120%;
+    width: 600px;
+    height: 600px;
+    background-color: skyblue;
+    transition: 1s;
+    box-shadow: 1px 1px 30px 30px skyblue;
+    z-index: -2;
+}
+
+.boton_hover:hover .circulo.cuatro{
+    position: absolute;
+    top: -550%;
+    left: 120%;
+    width: 600px;
+    height: 600px;
+    background-color: skyblue;
+    transition: 2s;
+    box-shadow: 1px 1px 30px 30px skyblue;
+    z-index: -2;
+}
+
+.boton_hover:hover .circulo.cinco{
+    position: absolute;
+    top: 550%;
+    left: 320%;
+    width: 600px;
+    height: 600px;
+    background-color: rgb(47, 206, 113);
+    transition: 4s;
+    box-shadow: 1px 1px 30px 30px rgb(47, 206, 113);
+    z-index: -2;
+}
+
+.boton_hover:hover .circulo.seis{
+    position: absolute;
+    top: 550%;
+    left: -320%;
+    width: 600px;
+    height: 600px;
+    background-color: #FF7246;
+    transition: 3s;
+    box-shadow: 1px 1px 30px 30px #FF7246;
+    z-index: -2;
+}
+
+.boton_hover:hover .circulo.siete{
+    position: absolute;
+    top: 50%;
+    left: -20%;
+    width: 200px;
+    height: 200px;
+    background-color: #54cab8;
+    transition: 3s;
+    box-shadow: 1px 1px 30px 30px #54cab8;
+    z-index: 4;
+}
+
+.boton_hover:hover .circulo.ocho{
+    position: absolute;
+    top: -480%;
+    left: 220%;
+    width: 400px;
+    height: 400px;
+    background-color: #c2a1c4;
+    transition: 2s;
+    box-shadow: 1px 1px 30px 30px #c2a1c4;
+    z-index: -3;
+}
+
+.boton_hover:hover .circulo.nueve{
+    position: absolute;
+    top: 480%;
+    left: 20%;
+    width: 400px;
+    height: 400px;
+    background-color: #FFD454;
+    transition: 4s;
+    box-shadow: 1px 1px 30px 30px #FFD454;
+    z-index: -3;
+}
+
+.boton_hover:hover .circulo.diez{
+    position: absolute;
+    top: 600%;
+    left: -130%;
+    width: 400px;
+    height: 400px;
+    background-color: #D0E64B;
+    transition: 2s;
+    box-shadow: 1px 1px 30px 30px #D0E64B;
+    z-index: -4;
+}
+
+.boton_hover:hover .circulo.diez{
+    position: absolute;
+    top: -100%;
+    left: -110%;
+    width: 400px;
+    height: 400px;
+    background-color: #F4B75C;
+    transition: 3.5s;
+    box-shadow: 1px 1px 30px 30px #F4B75C;
+    z-index: -3;
+}
+
+.boton_hover:hover .circulo.once{
+    position: absolute;
+    top: -100%;
+    left: 180%;
+    width: 400px;
+    height: 400px;
+    background-color: #F38000;
+    transition: 4s;
+    box-shadow: 1px 1px 30px 30px #F38000;
+    z-index: -3;
+}
+
+.boton_hover:hover .circulo.doce{
+    position: absolute;
+    top: -100%;
+    left: 83%;
+    width: 400px;
+    height: 400px;
+    background-color: #8034DF;
+    transition: 3.5s;
+    box-shadow: 1px 1px 30px 30px #8034DF;
+    z-index: -3;
+}
+
+.boton_hover:hover .circulo.trece{
+    position: absolute;
+    top: 450%;
+    left: 165%;
+    width: 400px;
+    height: 400px;
+    background-color: #F36533;
+    transition: 2s;
+    box-shadow: 1px 1px 30px 30px #F36533;
+    z-index: -3;
+}
+
+.boton_hover:hover .circulo.catorce{
+    position: absolute;
+    top: 750%;
+    left: -155%;
+    width: 700px;
+    height: 700px;
+    background-color: #3768A7;
+    transition: 2s;
+    box-shadow: 1px 1px 30px 30px #3768A7;
+    z-index: -3;
+}
+
+.boton_hover:hover .fondo.negro{
+    position: absolute;
+    top: -1300%;
+    left: -455%;
+    width: 950%;
+    height: 2600%;
+    background-color: black;
+    z-index: -100;
+}

@@ -1,0 +1,17 @@
+.primero, .segundo{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    position: sticky;
+    top: 0;
+}
+
+.primero{
+    left: 100px;
+    background-color: red;
+}
+
+.segundo{
+    left: 300px;
+    background-color: yellow;
+}
