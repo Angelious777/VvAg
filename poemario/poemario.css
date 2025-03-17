@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 19px;
+}
+
+body{
+    background-color:#5d6265;
+    margin-bottom: 50px;
+    color: white;
+}
+
+hr{
+    border: 1px solid white;
+}
+
+.imagen1{
+    position: absolute;
+    top: 200px;
+    left: -10%;
+    opacity: 0.1;
+}
+
+.imagen2{
+    position: absolute;
+    top: 200px;
+    right: -10%;
+    opacity: 0.1;
+}
+
+.presentacion{
+    width: 55%;
+    margin: 50px auto;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.presentacion h1{
+    font-size: 40px;
+    text-align: center;
+}
+
+.texto{
+    width: 50%;
+    min-width: 700px;
+    margin: 2em auto ;
+    padding: 1rem 2rem;
+    border: 2px solid black;
+    font-family:Josefin Slab;
+}
+
+.texto h1{
+    font-family: yellowtail;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.texto p{
+    font-size: 1rem;
+    line-height: 40px;
+}
+
+.final{
+    margin-top: 1rem;
+    display: block;
+    text-align: right;
+}
+
+.botones{
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+button{
+    background-color: #CCCCCC;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    background-position: cover;
+}
+
+button a{
+    text-decoration: none;
+    color: black;
+    font-family: Comic sans ms,Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    
+}
+
+.boton:hover .texto_enlaces{
+    color: black;
+    transition: 1s;
+}
+
+
+.enlace_2{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 25px;
+    gap: 80px;
+}
+
+.boton_2{
+    font-family: Comic sans ms,Arial, Helvetica, sans-serif;
+}
+
+
